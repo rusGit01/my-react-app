@@ -1,0 +1,72 @@
+/* Light mode (default) */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Light text */
+}
+
+.contentContainer {
+  display: flex;
+  flex: 1; /* This makes the content take up the remaining space between Header and Footer */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 150px;
+  background-color: #fbe3c5; /* Light sidebar background */
+  padding: 20px;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Allow the list to take up remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarItem {
+  margin-bottom: 15px;
+}
+
+/* Divider Style */
+.sidebarItem.divider {
+  margin-top: auto; /* Push the divider and items below it to the bottom */
+  padding-top: 20px;
+  border-top: 1px solid #ccc; /* Add a line divider */
+}
+
+.sidebarLink {
+  display: block; /* Make the link a block element */
+  text-decoration: none;
+  color: #333; /* Light text */
+  font-size: 16px;
+  padding: 10px; /* Add padding to create a rectangular box */
+  border-radius: 5px; /* Rounded corners for the box */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidebarLink:hover {
+  background-color: hsl(12, 79%, 79%); /* Highlight the entire box on hover */
+  color: white; /* Change text color on hover */
+}
+
+/* Active Link Style */
+.activeLink {
+  background-color: #e76f51; /* Highlight the active link */
+  color: white; /* Change text color for the active link */
+}
+
+/* Main Content Styles */
+.mainContent {
+  flex: 1; /* Takes up remaining space */
+  padding: 20px;
+  background-color: #fff; /* Light background */
+  color: #000000; /* Light text */
+}

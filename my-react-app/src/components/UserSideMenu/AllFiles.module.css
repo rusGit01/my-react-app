@@ -1,0 +1,47 @@
+.allFilesContainer {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .fileTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .fileTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .fileTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .fileTable th {
+    background-color: #f4a261;
+    color: white;
+  }
+  
+  .fileTable tr:hover {
+    background-color: #fbe3c5;
+  }
+  
+  .fileTable button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .fileTable button:hover {
+    background-color: #e76f51;
+    color: white;
+  }
